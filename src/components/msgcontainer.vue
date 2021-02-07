@@ -127,6 +127,15 @@ export default {
       contacts: null,
       menuToggled: false,
       search: "",
+      menus: [
+        "New group",
+        "Create a room",
+        "Profile",
+        "Archived",
+        "Starred",
+        "Settings",
+        "Log out",
+      ],
     };
   },
 
