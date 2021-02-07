@@ -1,0 +1,38 @@
+[
+    {
+        "picture": "./contact/1.png",
+        "name": "Sahil",
+        "message": "ooooh poor",
+        "hover": false
+    },
+    {
+        "picture": "./contact/2.png",
+        "name": "Lalitha",
+        "message": "njanum",
+        "hover": false
+    },
+    {
+        "picture": "./contact/3.jpg",
+        "name": "Deadpool",
+        "message": "Motherf****r",
+        "hover": false
+    },
+    {
+        "picture": "./contact/4.jpg",
+        "name": "Cornor",
+        "message": "have Proper whiskey",
+        "hover": false
+    },
+    {
+        "picture": "./contact/5.jpg",
+        "name": "Granger",
+        "message": "Its LevioSA",
+        "hover": false
+    },
+    {
+        "picture": "./contact/6.jpg",
+        "name": "Lal A10",
+        "message": "Prime edtha mone",
+        "hover": false
+    }
+]
