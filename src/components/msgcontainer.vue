@@ -59,6 +59,7 @@
           class="flex flex-row px-6 py-2 hover:bg-gray-100"
           @mouseover="contact.hover = true"
           @mouseleave="contact.hover = false"
+          v-on:click="contactSelected = contact.name"
         >
           <img
             :src="`${contact.picture}`"
@@ -86,6 +87,7 @@
           class="flex flex-row px-6 py-2 hover:bg-gray-100"
           @mouseover="contact.hover = true"
           @mouseleave="contact.hover = false"
+          v-on:click="contactSelected = contact.name"
         >
           <img
             :src="contact.picture"
@@ -112,8 +114,15 @@
     >
       <p
         class="p-5 text-center text-4xl text-gray-600 mx-auto my-auto align-middle mt-48"
+        v-if="!contactSelected"
       >
         where convinience overtakes privacy
+      </p>
+      <p
+        class="p-5 text-center text-4xl text-gray-600 mx-auto my-auto align-middle mt-48"
+        v-else
+      >
+        Spying on chat with {{ contactSelected }}
       </p>
     </div>
   </div>
@@ -136,6 +145,7 @@ export default {
         "Settings",
         "Log out",
       ],
+      contactSelected: false,
     };
   },
 
