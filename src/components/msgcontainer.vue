@@ -56,10 +56,10 @@
         <div
           v-for="contact in contacts"
           v-bind:key="contact.name"
-          class="flex flex-row px-6 py-2 hover:bg-gray-100"
+          class="flex flex-row px-6 py-2 hover:bg-gray-100 border-b border-gray-100 rounded-lg"
           @mouseover="contact.hover = true"
           @mouseleave="contact.hover = false"
-          v-on:click="contactSelected = contact.name"
+          v-on:click="fetchSelectedPerson(contact.name)"
         >
           <img
             :src="`${contact.picture}`"
@@ -87,7 +87,7 @@
           class="flex flex-row px-6 py-2 hover:bg-gray-100"
           @mouseover="contact.hover = true"
           @mouseleave="contact.hover = false"
-          v-on:click="contactSelected = contact.name"
+          v-on:click="fetchSelectedPerson(contact.name)"
         >
           <img
             :src="contact.picture"
@@ -118,12 +118,30 @@
       >
         where convinience overtakes privacy
       </p>
-      <p
-        class="p-5 text-center text-4xl text-gray-600 mx-auto my-auto align-middle mt-48"
-        v-else
-      >
-        Spying on chat with {{ contactSelected }}
-      </p>
+      <div v-else>
+        <div
+          class="px-4 py-3 bg-gray-200 flex flex-row justify-between relative"
+        >
+          <div class="flex flex-row">
+            <img
+              :src="contactSelected.picture"
+              alt="myPic"
+              class="h-12 w-12 rounded-full"
+            />
+            <p class="text-gray-800 text-2xl ml-2 font-semibold p-2">
+              {{ contactSelected.name }}
+            </p>
+          </div>
+          <div class="flex flex-row">
+            <i
+              class="fas fa-paperclip ml-6 cursor-pointer fill-current text-gray-600 p-2 text-2xl"
+            ></i>
+            <i
+              class="fas fa-ellipsis-v ml-6 cursor-pointer fill-current text-gray-600 p-2 text-2xl"
+            ></i>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -164,6 +182,14 @@ export default {
     fetch("./contacts.json")
       .then((response) => response.json())
       .then((data) => (this.contacts = data));
+  },
+
+  methods: {
+    fetchSelectedPerson: function (person) {
+      this.contactSelected = this.contacts.find(
+        (element) => element.name == person
+      );
+    },
   },
 };
 </script>
