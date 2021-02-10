@@ -118,7 +118,7 @@
       >
         where convinience overtakes privacy
       </p>
-      <div v-else>
+      <div class="flex flex-col h-full" v-else>
         <div
           class="px-4 py-3 bg-gray-200 flex flex-row justify-between relative"
         >
@@ -134,12 +134,27 @@
           </div>
           <div class="flex flex-row">
             <i
-              class="fas fa-paperclip ml-6 cursor-pointer fill-current text-gray-600 p-2 text-2xl"
+              class="fa fa-search ml-6 cursor-pointer fill-current text-gray-600 p-2 text-xl"
             ></i>
             <i
-              class="fas fa-ellipsis-v ml-6 cursor-pointer fill-current text-gray-600 p-2 text-2xl"
+              class="fas fa-ellipsis-v ml-6 cursor-pointer fill-current text-gray-600 p-2 text-xl"
             ></i>
           </div>
+        </div>
+        <div class="h-5/6 bg-green-200">
+          <p class="text-4xl text-center mt-44">
+            Spying on conversation with {{ contactSelected.name }}
+          </p>
+        </div>
+        <div class="flex flex-row bg-gray-200 h-16 relative">
+          <input
+            class="w-full rounded-full h-12 m-auto ml-24 mr-12 px-12"
+            type="text"
+            v-model="search"
+          />
+          <i class="far fa-smile cursor-pointer fill-current text-gray-600 p-2 text-xl absolute left-3 top-2"></i>
+          <i class="fas fa-paperclip cursor-pointer fill-current text-gray-600 p-2 text-xl absolute left-12 top-2"></i>
+          <i class="fas fa-microphone cursor-pointer fill-current text-gray-600 p-2 text-xl absolute right-3 top-2"></i>
         </div>
       </div>
     </div>
