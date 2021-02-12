@@ -1,8 +1,12 @@
 <template>
   <div
     class="flex flex-row w-full h-screen lg:w-screen70 lg:h-screen90 mx-auto lg:mt-8 bg-white"
-    @click="menuToggledmain === true ? (menuToggledmain = false) : null"
+    v-on:click="
+      menuToggledmain === true ? (menuToggledmain = false) : null;
+      menuToggledconvo === true ? (menuToggledconvo = false) : null;
+    "
   >
+    <!-- v-on:click="menuToggledconvo === true ? (menuToggledconvo = false) : null" -->
     <div
       class="w-full md:w-1/3 bg-white shadow-md border-2 flex flex-col overflow-x-scroll"
     >
@@ -29,13 +33,13 @@
 
         <div
           v-if="menuToggledmain"
-          class="bg-white absolute top-14 right-0 min-w-48 border-2 absolute z-10 w-1/2 p-2 rounded-lg shadow-lg transition-all duration-500 ease-in-out"
+          class="bg-white absolute top-14 right-0 min-w-48 border-2 z-10 w-1/2 p-2 rounded-lg shadow-lg transition-all duration-500 ease-in-out"
           id="menu"
         >
           <p
             v-for="menu in menusmain"
             v-bind:key="menu"
-            class="text-xl hover:bg-gray-200 p-2"
+            class="hover:bg-gray-200 p-2"
           >
             {{ menu }}
           </p>
@@ -132,13 +136,27 @@
               {{ contactSelected.name }}
             </p>
           </div>
-          <div class="flex flex-row">
+          <div class="flex flex-row relative">
             <i
               class="fa fa-search ml-6 cursor-pointer fill-current text-gray-600 p-2 text-xl"
             ></i>
             <i
               class="fas fa-ellipsis-v ml-6 cursor-pointer fill-current text-gray-600 p-2 text-xl"
+              @click.stop="menuToggledconvo = true"
             ></i>
+            <div
+              v-if="menuToggledconvo"
+              class="bg-white absolute top-14 right-0 min-w-48 border-2 z-10 p-2 rounded-lg shadow-lg transition-all duration-500 ease-in-out"
+              id="menu"
+            >
+              <p
+                v-for="menu in menuconvo"
+                v-bind:key="menu"
+                class="hover:bg-gray-200 p-2 w-56"
+              >
+                {{ menu }}
+              </p>
+            </div>
           </div>
         </div>
 
@@ -194,6 +212,7 @@ export default {
     return {
       contacts: null,
       menuToggledmain: false,
+      menuToggledconvo: false,
       search: "",
       menusmain: [
         "New group",
