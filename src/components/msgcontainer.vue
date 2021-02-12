@@ -1,7 +1,7 @@
 <template>
   <div
     class="flex flex-row w-full h-screen lg:w-screen70 lg:h-screen90 mx-auto lg:mt-8 bg-white"
-    @click="menuToggled === true ? (menuToggled = false) : null"
+    @click="menuToggledmain === true ? (menuToggledmain = false) : null"
   >
     <div
       class="w-full md:w-1/3 bg-white shadow-md border-2 flex flex-col overflow-x-scroll"
@@ -23,17 +23,17 @@
           ></i>
           <i
             class="fas fa-ellipsis-v ml-6 cursor-pointer fill-current text-gray-600"
-            @click.stop="menuToggled = true"
+            @click.stop="menuToggledmain = true"
           ></i>
         </div>
 
         <div
-          v-if="menuToggled"
+          v-if="menuToggledmain"
           class="bg-white absolute top-14 right-0 min-w-48 border-2 absolute z-10 w-1/2 p-2 rounded-lg shadow-lg transition-all duration-500 ease-in-out"
           id="menu"
         >
           <p
-            v-for="menu in menus"
+            v-for="menu in menusmain"
             v-bind:key="menu"
             class="text-xl hover:bg-gray-200 p-2"
           >
@@ -141,20 +141,46 @@
             ></i>
           </div>
         </div>
-        <div class="h-5/6 bg-green-200">
-          <p class="text-4xl text-center mt-44">
+
+        <!-- <p class="text-4xl text-center mt-44">
             Spying on conversation with {{ contactSelected.name }}
-          </p>
+          </p> -->
+        <div
+          class="h-full bg-gray-100 px-4 py-1 inline-flex flex-col overflow-x-scroll"
+        >
+          <div
+            v-for="(message, name) in contactSelected.messages"
+            v-bind:key="message.me1"
+            class="w-full"
+          >
+            <p
+              class="float-right bg-green-200 px-4 py-2 m-2 rounded-lg block pl-auto"
+              v-if="name[0] == `m`"
+            >
+              {{ message }}
+            </p>
+            <p
+              class="float-left bg-white px-4 py-2 m-2 rounded-lg block pr-auto"
+              v-else
+            >
+              {{ message }}
+            </p>
+          </div>
         </div>
         <div class="flex flex-row bg-gray-200 h-16 relative">
           <input
             class="w-full rounded-full h-12 m-auto ml-24 mr-12 px-12"
             type="text"
-            v-model="search"
           />
-          <i class="far fa-smile cursor-pointer fill-current text-gray-600 p-2 text-xl absolute left-3 top-2"></i>
-          <i class="fas fa-paperclip cursor-pointer fill-current text-gray-600 p-2 text-xl absolute left-12 top-2"></i>
-          <i class="fas fa-microphone cursor-pointer fill-current text-gray-600 p-2 text-xl absolute right-3 top-2"></i>
+          <i
+            class="far fa-smile cursor-pointer fill-current text-gray-600 p-2 text-xl absolute left-3 top-2"
+          ></i>
+          <i
+            class="fas fa-paperclip cursor-pointer fill-current text-gray-600 p-2 text-xl absolute left-12 top-2"
+          ></i>
+          <i
+            class="fas fa-microphone cursor-pointer fill-current text-gray-600 p-2 text-xl absolute right-3 top-2"
+          ></i>
         </div>
       </div>
     </div>
@@ -167,9 +193,9 @@ export default {
   data() {
     return {
       contacts: null,
-      menuToggled: false,
+      menuToggledmain: false,
       search: "",
-      menus: [
+      menusmain: [
         "New group",
         "Create a room",
         "Profile",
@@ -177,6 +203,13 @@ export default {
         "Starred",
         "Settings",
         "Log out",
+      ],
+      menuconvo: [
+        "Contactinfo",
+        "Select messages",
+        "Mute notifications",
+        "Clear messages",
+        "Delete chat",
       ],
       contactSelected: false,
     };
@@ -237,7 +270,7 @@ export default {
 }
 
 /* Add the animation: property to whichever element you want to animate */
-#menu {
+#menusmain {
   animation: zoom 0.2s ease 0s;
 }
 </style>

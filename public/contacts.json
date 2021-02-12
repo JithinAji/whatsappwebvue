@@ -39,14 +39,44 @@
         "name": "Lal A10",
         "message": "Prime edtha mone",
         "hover": false,
-        "selected": false
+        "selected": false,
+        "messages": {
+            "me1": "sughaana ettaaa",
+            "you2": "nmmle okke orma indaaa",
+            "you3": "Lucifernte abiprayam parnjittu poyathaanu pinne oru vivarom illalla",
+            "me4": "ichiri pani ondaayirunnu :(((",
+            "you5": "prime edthaa mone",
+            "me6": "illettaaaaa paisa illa",
+            "you7": "trial edukkedaa",
+            "me8": "vookay etta",
+            "me9": "sughaana ettaaa",
+            "you10": "nmmle okke orma indaaa",
+            "you11": "Lucifernte abiprayam parnjittu poyathaanu pinne oru vivarom illalla",
+            "me12": "ichiri pani ondaayirunnu :(((",
+            "you13": "prime edthaa mone"
+        }
     },
     {
         "picture": "./contact/7.jpg",
         "name": "Mars man",
         "message": "awkard laugh",
         "hover": false,
-        "selected": false
+        "selected": false,
+        "messages": {
+            "me1": "sughaana ettaaa",
+            "you2": "nmmle okke orma indaaa",
+            "you3": "Lucifernte abiprayam parnjittu poyathaanu pinne oru vivarom illalla",
+            "me4": "ichiri pani ondaayirunnu :(((",
+            "you5": "prime edthaa mone",
+            "me6": "illettaaaaa paisa illa",
+            "you7": "trial edukkedaa",
+            "me8": "vookay etta",
+            "me9": "sughaana ettaaa",
+            "you10": "nmmle okke orma indaaa",
+            "you11": "Lucifernte abiprayam parnjittu poyathaanu pinne oru vivarom illalla",
+            "me12": "ichiri pani ondaayirunnu :(((",
+            "you13": "awkard laugh"
+        }
     },
     {
         "picture": "./contact/8.jpg",
@@ -67,6 +97,21 @@
         "name": "Anya",
         "message": "Really",
         "hover": false,
-        "selected": false
+        "selected": false,
+        "messages": {
+            "me1": "sughaana ettaaa",
+            "you2": "nmmle okke orma indaaa",
+            "you3": "Lucifernte abiprayam parnjittu poyathaanu pinne oru vivarom illalla",
+            "me4": "ichiri pani ondaayirunnu :(((",
+            "you5": "prime edthaa mone",
+            "me6": "illettaaaaa paisa illa",
+            "you7": "trial edukkedaa",
+            "me8": "vookay etta",
+            "me9": "sughaana ettaaa",
+            "you10": "nmmle okke orma indaaa",
+            "you11": "Lucifernte abiprayam parnjittu poyathaanu pinne oru vivarom illalla",
+            "me12": "ichiri pani ondaayirunnu :(((",
+            "you13": "really"
+        }
     }
 ]
