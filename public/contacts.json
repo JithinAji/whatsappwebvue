@@ -4,35 +4,88 @@
         "name": "Sahil",
         "message": "ooooh poor",
         "hover": false,
-        "selected": false
+        "selected": false,
+        "messages": {
+            "me1": "Why so",
+            "you2": "onnullaa",
+            "you3": "bore",
+            "me4": "kidukkachi",
+            "you5": "malareeee",
+            "me6": "malarinte malaree",
+            "you7": "zooo zaad",
+            "you8": "English mother fucker, do you speak it?",
+            "me9": " There's a passage that I got memorized, seems appropiate for this situation: Ezekiel 25,17. The path of the righteous man is beset of all sides by the iniquities of the selfish and the tyranny of evil me. Blessed is he who, in the name of the charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who attempt to poison and destroy my brothers. And you will know my name is the Lord when I lay my vengeance upon thee.",
+            "you10": "oooh poor"
+        }
     },
     {
         "picture": "./contact/2.png",
         "name": "Lalitha",
         "message": "njanum",
         "hover": false,
-        "selected": false
+        "selected": false,
+        "selected": false,
+        "messages": {
+            "me1": "Lalitha, You're No Picnic. You're A Spoiled Little Brat, Even.",
+            "you2": "I'll Never Let Go, Jithin.",
+            "you3": "It Was The Ship Of Dreams.",
+            "me4": "That Fire That I Love About You, Lalitha, That Fire Is Gonna Burn Out.",
+            "you5": "You Have A Gift, Jithin. You See People.",
+            "me6": "When You Got Nothing, You Got Nothing To Lose.",
+            "you7": "I Saw My Whole Life As If I'd Already Lived It.",
+            "you8": "You Jump, I Jump.",
+            "me9": " I Figure Life's A Gift And I Don't Intend On Wasting It.",
+            "you10": "njanum"
+        }
     },
     {
         "picture": "./contact/3.jpg",
         "name": "Deadpool",
         "message": "Motherf****r",
         "hover": false,
-        "selected": false
+        "selected": false,
+        "messages": {
+            "me1": "House blowing up builds character.",
+            "you2": "Bad Deadpool... Good Deadpool!",
+            "you3": "Whose kitty litter did I just shit in?",
+            "me4": "Guy came in here looking for you. Real Grim Reaper-type. I don't know. Might further the plot.",
+            "you5": "If I ever decide to become a crime-fighting shit swizzler, who rooms with a bunch of other little whiners at Neverland Mansion with some creepy, old, bald, Heaven's Gate-looking motherfucker... on that day, I'll send your shiny, happy ass a friend request.",
+            "me6": "You have something in your teeth.",
+            "you7": "It's a Big house. It's weird I only ever see two of you. Almost like the studio couldn't afford another X-Man.",
+            "you8": "This is my most prized possession...",
+            "you9": "Motherf****r"
+        }
     },
     {
         "picture": "./contact/4.jpg",
         "name": "Cornor",
         "message": "have Proper whiskey",
         "hover": false,
-        "selected": false
+        "selected": false,
+        "messages": {
+            "you1": "My knee popped, but fuck it, it is what it is. I just went with what was comfortable, and what was comfortable was getting the motherfucker to the ground. Looking back, I should have just pulled my knee from my leg and hit him with it.",
+            "me2": "You need to work",
+            "you3": "There’s two things I really like to do and that’s whoop ass and look good. I’m doing one of them right now and on Saturday night, I’m doing the other.",
+            "me3": "another trash talk statement",
+            "you4": "I’ve ridiculed everyone on the roster, I just want to say from the bottom of my heart, I’d like to take this chance to apologise…to absolutely nobody!",
+            "me5": "Keep calm",
+            "you7": "have proper whiskey"
+        }
     },
     {
         "picture": "./contact/5.jpg",
         "name": "Granger",
         "message": "Its LevioSA",
         "hover": false,
-        "selected": false
+        "selected": false,
+        "messages": {
+            "you1": "Me? Books and cleverness. There are more important things: friendship and bravery.",
+            "me2": "Not really",
+            "you3": "Actually I'm highly logical which allows me to look past extraneous detail and perceive clearly that which others overlook.",
+            "me3": "Thats called being boastful, leviosar you to cieling",
+            "you4": "Stop, stop, stop! You're going to take someone's eye out. Besides, you're saying it wrong. It's LeviOsa, not LeviosAR!",
+            "you5": "Its LevioSA"
+        }
     },
     {
         "picture": "./contact/6.jpg",
@@ -63,34 +116,34 @@
         "hover": false,
         "selected": false,
         "messages": {
-            "me1": "sughaana ettaaa",
-            "you2": "nmmle okke orma indaaa",
-            "you3": "Lucifernte abiprayam parnjittu poyathaanu pinne oru vivarom illalla",
-            "me4": "ichiri pani ondaayirunnu :(((",
-            "you5": "prime edthaa mone",
-            "me6": "illettaaaaa paisa illa",
-            "you7": "trial edukkedaa",
-            "me8": "vookay etta",
-            "me9": "sughaana ettaaa",
-            "you10": "nmmle okke orma indaaa",
-            "you11": "Lucifernte abiprayam parnjittu poyathaanu pinne oru vivarom illalla",
-            "me12": "ichiri pani ondaayirunnu :(((",
-            "you13": "awkard laugh"
+            "me1": "Hellooooo",
+            "you2": "busy",
+            "you3": "gotta run",
+            "me4": "as always",
+            "you5": "awkard laugh"
         }
     },
     {
         "picture": "./contact/8.jpg",
         "name": "Modi",
-        "message": "deshvaasiiii",
+        "message": "deshvaasi.....",
         "hover": false,
-        "selected": false
+        "selected": false,
+        "messages": {
+            "you1": "deshvaasi....."
+        }
     },
     {
         "picture": "./contact/9.jpg",
         "name": "Maisie",
         "message": "Im impressed",
         "hover": false,
-        "selected": false
+        "selected": false,
+        "messages": {
+            "you1": "I talk to myself quite a lot, and when things get stressful, I just tell myself to breathe. ... ",
+            "me2": "me tooo",
+            "you3": "Im impressed"
+        }
     },
     {
         "picture": "./contact/10.jpg",
@@ -99,19 +152,9 @@
         "hover": false,
         "selected": false,
         "messages": {
-            "me1": "sughaana ettaaa",
-            "you2": "nmmle okke orma indaaa",
-            "you3": "Lucifernte abiprayam parnjittu poyathaanu pinne oru vivarom illalla",
-            "me4": "ichiri pani ondaayirunnu :(((",
-            "you5": "prime edthaa mone",
-            "me6": "illettaaaaa paisa illa",
-            "you7": "trial edukkedaa",
-            "me8": "vookay etta",
-            "me9": "sughaana ettaaa",
-            "you10": "nmmle okke orma indaaa",
-            "you11": "Lucifernte abiprayam parnjittu poyathaanu pinne oru vivarom illalla",
-            "me12": "ichiri pani ondaayirunnu :(((",
-            "you13": "really"
+            "you1": "I don't really feel like I belong anywhere, which makes me belong everywhere.",
+            "me2": "me tooo",
+            "you3": "really"
         }
     }
 ]

@@ -60,7 +60,7 @@
         <div
           v-for="contact in contacts"
           v-bind:key="contact.name"
-          class="flex flex-row px-6 py-2 hover:bg-gray-100 border-b border-gray-100 rounded-lg"
+          class="flex flex-row px-6 py-1 hover:bg-gray-100 border-b border-gray-100 rounded-lg"
           @mouseover="contact.hover = true"
           @mouseleave="contact.hover = false"
           v-on:click="fetchSelectedPerson(contact.name)"
@@ -72,8 +72,8 @@
           />
           <!-- http://localhost:3000/src/assets/contact/2.png -->
           <div>
-            <p class="text-2xl">{{ contact.name }}</p>
-            <p class="text-xl text-gray-500">{{ contact.message }}</p>
+            <p class="text-xl">{{ contact.name }}</p>
+            <p class=" text-gray-500">{{ contact.message }}</p>
           </div>
           <i
             :class="`fa fa-angle-down ml-auto mt-6 ${
@@ -100,8 +100,8 @@
           />
           <!-- http://localhost:3000/src/assets/contact/2.png -->
           <div>
-            <p class="text-2xl">{{ contact.name }}</p>
-            <p class="text-xl text-gray-500">{{ contact.message }}</p>
+            <p class="text-xl">{{ contact.name }}</p>
+            <p class=" text-gray-500">{{ contact.message }}</p>
           </div>
           <i
             :class="`fa fa-angle-down ml-auto mt-6 ${
@@ -172,13 +172,13 @@
             class="w-full"
           >
             <p
-              class="float-right bg-green-200 px-4 py-2 m-2 rounded-lg block pl-auto"
+              class="float-right bg-green-200 px-4 py-2 m-2 rounded-lg block pl-auto ml-32"
               v-if="name[0] == `m`"
             >
               {{ message }}
             </p>
             <p
-              class="float-left bg-white px-4 py-2 m-2 rounded-lg block pr-auto"
+              class="float-left bg-white px-4 py-2 m-2 rounded-lg block pr-auto mr-32"
               v-else
             >
               {{ message }}
