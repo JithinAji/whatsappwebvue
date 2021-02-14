@@ -8,7 +8,8 @@
   >
     <!-- v-on:click="menuToggledconvo === true ? (menuToggledconvo = false) : null" -->
     <div
-      class="w-full md:w-1/3 bg-white shadow-md border-2 flex flex-col overflow-x-scroll"
+      class="w-0 md:w-1/3 bg-white shadow-md border-2 flex flex-col overflow-x-scroll"
+      :class="{ 'w-full': !showconvo }"
     >
       <div
         class="head px-4 py-2 bg-gray-200 flex flex-row justify-between relative"
@@ -73,7 +74,7 @@
           <!-- http://localhost:3000/src/assets/contact/2.png -->
           <div>
             <p class="text-xl">{{ contact.name }}</p>
-            <p class=" text-gray-500">{{ contact.message }}</p>
+            <p class="text-gray-500">{{ contact.message }}</p>
           </div>
           <i
             :class="`fa fa-angle-down ml-auto mt-6 ${
@@ -101,7 +102,7 @@
           <!-- http://localhost:3000/src/assets/contact/2.png -->
           <div>
             <p class="text-xl">{{ contact.name }}</p>
-            <p class=" text-gray-500">{{ contact.message }}</p>
+            <p class="text-gray-500">{{ contact.message }}</p>
           </div>
           <i
             :class="`fa fa-angle-down ml-auto mt-6 ${
@@ -114,7 +115,8 @@
     </div>
 
     <div
-      class="w-2/3 bg-white shadow-md border-b-8 border-green-500 hidden md:block"
+      class="w-0 md:w-2/3 bg-white shadow-md border-b-8 border-green-500"
+      :class="{ 'w-full': showconvo }"
     >
       <p
         class="p-5 text-center text-4xl text-gray-600 mx-auto my-auto align-middle mt-48"
@@ -127,6 +129,10 @@
           class="px-4 py-3 bg-gray-200 flex flex-row justify-between relative"
         >
           <div class="flex flex-row">
+            <i
+              class="fas fa-arrow-left mr-6 cursor-pointer fill-current text-gray-600 p-2 text-xl block md:hidden"
+              @click="showconvo = false"
+            ></i>
             <img
               :src="contactSelected.picture"
               alt="myPic"
@@ -214,6 +220,7 @@ export default {
       menuToggledmain: false,
       menuToggledconvo: false,
       search: "",
+      showconvo: false,
       menusmain: [
         "New group",
         "Create a room",
@@ -253,6 +260,7 @@ export default {
 
   methods: {
     fetchSelectedPerson: function (person) {
+      this.showconvo = true;
       this.contactSelected = this.contacts.find(
         (element) => element.name == person
       );
