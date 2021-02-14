@@ -193,17 +193,17 @@
         </div>
         <div class="flex flex-row bg-gray-200 h-16 relative">
           <input
-            class="w-full rounded-full h-12 m-auto ml-24 mr-12 px-12"
+            class="w-full rounded-full h-12 m-auto md:ml-24 md:mr-12 px-12"
             type="text"
           />
           <i
-            class="far fa-smile cursor-pointer fill-current text-gray-600 p-2 text-xl absolute left-3 top-2"
+            class="far fa-smile cursor-pointer fill-current text-gray-600 p-2 text-xl absolute left-3 top-2 hidden md:block"
           ></i>
           <i
-            class="fas fa-paperclip cursor-pointer fill-current text-gray-600 p-2 text-xl absolute left-12 top-2"
+            class="fas fa-paperclip cursor-pointer fill-current text-gray-600 p-2 text-xl absolute left-12 top-2 hidden md:block"
           ></i>
           <i
-            class="fas fa-microphone cursor-pointer fill-current text-gray-600 p-2 text-xl absolute right-3 top-2"
+            class="fas fa-microphone cursor-pointer fill-current text-gray-600 p-2 text-xl absolute right-3 top-2 hidden md:block"
           ></i>
         </div>
       </div>
