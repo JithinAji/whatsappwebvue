@@ -35,7 +35,7 @@
         <div
           v-if="menuToggledmain"
           class="bg-white absolute top-14 right-0 min-w-48 border-2 z-10 w-1/2 p-2 rounded-lg shadow-lg transition-all duration-500 ease-in-out"
-          id="menu"
+          id="menumain"
         >
           <p
             v-for="menu in menusmain"
@@ -153,7 +153,7 @@
             <div
               v-if="menuToggledconvo"
               class="bg-white absolute top-14 right-0 min-w-48 border-2 z-10 p-2 rounded-lg shadow-lg transition-all duration-500 ease-in-out"
-              id="menu"
+              id="menuconvo"
             >
               <p
                 v-for="menu in menuconvo"
@@ -212,15 +212,11 @@
 </template>
 
 <script>
-//import axios from "axios";
 export default {
   data() {
     return {
+      //objects and arrays
       contacts: null,
-      menuToggledmain: false,
-      menuToggledconvo: false,
-      search: "",
-      showconvo: false,
       menusmain: [
         "New group",
         "Create a room",
@@ -237,8 +233,22 @@ export default {
         "Clear messages",
         "Delete chat",
       ],
-      contactSelected: false,
+      contactSelected: null,
+
+      //boolean
+      menuToggledmain: false,
+      menuToggledconvo: false,
+      showconvo: false,
+
+      //string
+      search: "",
     };
+  },
+
+  mounted() {
+    fetch("./contacts.json")
+      .then((response) => response.json())
+      .then((data) => (this.contacts = data));
   },
 
   watch: {
@@ -250,12 +260,6 @@ export default {
       });
       this.showContact = contactName;
     },
-  },
-
-  mounted() {
-    fetch("./contacts.json")
-      .then((response) => response.json())
-      .then((data) => (this.contacts = data));
   },
 
   methods: {
@@ -297,7 +301,8 @@ export default {
 }
 
 /* Add the animation: property to whichever element you want to animate */
-#menusmain {
+#menumain,
+#menuconvo {
   animation: zoom 0.2s ease 0s;
 }
 </style>
