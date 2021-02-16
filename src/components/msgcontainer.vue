@@ -8,8 +8,8 @@
   >
     <!-- v-on:click="menuToggledconvo === true ? (menuToggledconvo = false) : null" -->
     <div
-      class="w-0 md:w-1/3 bg-white shadow-md border-2 flex flex-col overflow-x-scroll"
-      :class="{ 'w-full': !showconvo }"
+      class="md:block w-full md:w-1/3 bg-white shadow-md border-2 flex flex-col overflow-x-scroll"
+      :class="{ hidden: showconvo }"
     >
       <div
         class="head px-4 py-2 bg-gray-200 flex flex-row justify-between relative"
@@ -115,8 +115,8 @@
     </div>
 
     <div
-      class="w-0 md:w-2/3 bg-white shadow-md border-b-8 border-green-500"
-      :class="{ 'w-full': showconvo }"
+      class="md:block w-full md:w-2/3 bg-white shadow-md border-b-8 border-green-500"
+      :class="{ hidden: !showconvo }"
     >
       <p
         class="p-5 text-center text-4xl text-gray-600 mx-auto my-auto align-middle mt-48"
@@ -193,17 +193,17 @@
         </div>
         <div class="flex flex-row bg-gray-200 h-16 relative">
           <input
-            class="w-full rounded-full h-12 m-auto md:ml-24 md:mr-12 px-12"
+            class="w-full rounded-full h-12 m-auto md:ml-24 md:mr-12 px-12 pl-24 md:pl-6"
             type="text"
           />
           <i
-            class="far fa-smile cursor-pointer fill-current text-gray-600 p-2 text-xl absolute left-3 top-2 hidden md:block"
+            class="far fa-smile cursor-pointer fill-current text-gray-600 p-2 text-xl absolute left-3 top-2 md:block"
           ></i>
           <i
-            class="fas fa-paperclip cursor-pointer fill-current text-gray-600 p-2 text-xl absolute left-12 top-2 hidden md:block"
+            class="fas fa-paperclip cursor-pointer fill-current text-gray-600 p-2 text-xl absolute left-12 top-2 md:block"
           ></i>
           <i
-            class="fas fa-microphone cursor-pointer fill-current text-gray-600 p-2 text-xl absolute right-3 top-2 hidden md:block"
+            class="fas fa-microphone cursor-pointer fill-current text-gray-600 p-2 text-xl absolute right-3 top-2 md:block"
           ></i>
         </div>
       </div>
